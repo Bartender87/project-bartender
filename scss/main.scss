@@ -12,7 +12,7 @@ body {
     z-index: 8;
 }
 //START PAGE========================================================
-/*.begin{
+.begin{
   background-image: url("../images/begin.jpg");
   margin-left: -8px;
   margin-top: -8px;
@@ -34,14 +34,16 @@ z-index: 9;
 top: 368px;
     left: 669px;
 
-  }*/
+  }
 //BUTTONS==================================================================
 
 .pour {
     width: 100px;
     height: 50px;
-    background-color: blue;
-    color: yellow;
+    font-size: 10px;
+    background: #c21500; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #c21500 , #ffc500); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #c21500 , #ffc500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 17px;
     font-style: italic;
     top: 220px;
@@ -57,21 +59,31 @@ top: 368px;
 .choose {
     width: 200px;
     height: 100px;
-    background-color: red;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #000428 , #004e92);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #000428 , #004e92);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: black;
     font-size: 30px;
     font-style: italic;
     top: 504px;
-    left: 38px;}
-//ERRORS==============================================================
-.text{
-  text-align: center;
-  padding-top: 100px;
+    left: 38px;
 }
+//ERRORS==============================================================
+
+.text {
+    text-align: center;
+    padding-top: 100px;
+}
+
 .forgetIce {
-  width: 400px;
-  height: 300px;
-    background-color: red;
+    width: 400px;
+    height: 300px;
+    background: #1A2980; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: black;
     font-size: 30px;
     font-style: italic;
@@ -79,39 +91,40 @@ top: 368px;
     z-index: 10;
     top: 152px;
     left: 340px;
-     display: none;
-  }
-  .error {
+    display: none;
+}
+
+.error {
     width: 400px;
     height: 300px;
-       top: 152px;
-       left: 340px;
-      background-color: red;
-      color: black;
-      font-size: 30px;
-      font-style: italic;
-      position: absolute;
-      z-index: 10;
-      display:none;
-
-
-    }
+    top: 152px;
+    left: 340px;
+  background: #16A085; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #16A085 , #F4D03F); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #16A085 , #F4D03F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
 //RECIPE==============================================================
+
 .recipe {
     width: 300px;
     height: 300px;
-    background-color: red;
+    background-color: rgba(249, 5, 9, 0.50);
+    font-weight: bold;
     color: black;
-    font-size: 30px;
+    font-size: 33px;
     font-style: italic;
     top: 374px;
     left: 371px;
     position: absolute;
     display: none;
-  }
-
+}
 //SHAKER==================================================================
-
 .closedshaker {
     background-image: url("../images/closedshaker.png");
     width: 78px;
@@ -374,4 +387,34 @@ top: 368px;
     left: 503px;
     visibility: hidden;
     z-index: 8;
+}
+//GRATS
+#grat {
+    position: relative;
+    color: red;
+    font-size: 60px;
+    width: 1115px;
+    height: 150px;
+    z-index: 11;
+    margin-left: -8px;
+    top: 63px;
+    visibility: hidden;
+}
+
+#grat > p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    animation: go 7s linear infinite;
+}
+@keyframes go {
+    0% {
+        transform: translateX(-100%);
+        padding-left: 100%
+    }
+
+    100% {
+        transform: translateX(0%);
+        padding-left: 100%
+    }
 }

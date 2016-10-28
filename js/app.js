@@ -18,6 +18,11 @@ $(function() {
             direction: "down"
         }, 1200);
         choose.hide("explode");
+        $('.icebox').on('click', function() {
+            $(this).data('clicked', true);
+            console.log('klik lod');
+        });
+
         $('.bottle').on('click', function() {
             console.log('To: 1');
             if ($(this).attr('id') == 'vodka' || $(this).attr('id') == 'kahlua' || $(this).attr('id') == 'milk') {
@@ -31,8 +36,8 @@ $(function() {
 
 
             $('.closedshaker, .icebox').on('click', function() {
-              $(this).data('clicked', true);
-              if ($('.closedshaker').data('clicked') && !$('.icebox').data('clicked')) {
+                $(this).data('clicked', true);
+                if ($('.closedshaker').data('clicked') && !$('.icebox').data('clicked')) {
                     $(".forgetIce").css("display", "block");
                 };
             });
@@ -149,7 +154,7 @@ $(function() {
     var icebox = $('.icebox');
 
 
-    icebox.one('click', function() {
+    icebox.on('click', function() {
         ice.animate({
             'top': '-=80'
         }, 300);
@@ -167,6 +172,7 @@ $(function() {
     var openshaker = $('.openshaker');
     var pour = $('.pour');
     var girl = $('.girl');
+    var grat = $('#grat');
 
     openshaker.one('click', function() {
         ice.css("visibility", "hidden");
@@ -193,6 +199,8 @@ $(function() {
         pour.css("display", "none");
         closedshaker.css("visibility", "hidden");
         girl.css("visibility", "visible");
+        console.log(grat);
+        grat.css("visibility", "visible");
     });
 
 
