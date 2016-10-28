@@ -27,16 +27,17 @@ $(function() {
             }
             console.log('To: 2');
 
-            $('.closedshaker').on('click', function() {
-               if  ( $('.closedshaker').data('clicked')    &&   !$('.icebox').data('clicked') )  {
-                    console.log('brak lodu');
+
+
+
+            $('.closedshaker, .icebox').on('click', function() {
+              $(this).data('clicked', true);
+              if ($('.closedshaker').data('clicked') && !$('.icebox').data('clicked')) {
+                    $(".forgetIce").css("display", "block");
                 };
-});
             });
         });
-
-
-
+    });
 
 
 

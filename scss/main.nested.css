@@ -10,27 +10,29 @@ body {
   position: relative;
   z-index: 8; }
 
-.begin {
+/*.begin{
   background-image: url("../images/begin.jpg");
   margin-left: -8px;
   margin-top: -8px;
   width: 1200px;
-  height: 691px;
+    height: 691px;
   position: relative;
   z-index: 6;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
 
-.beginBtn {
-  background-image: url("../images/begin.png");
-  width: 320px;
-  height: 201px;
-  background-size: contain;
-  position: absolute;
-  z-index: 9;
-  top: 368px;
-  left: 669px; }
+}
+.beginBtn{
+background-image: url("../images/begin.png");
+width: 320px;
+height: 201px;
+background-size: contain;
+position: absolute;
+z-index: 9;
+top: 368px;
+    left: 669px;
 
+  }*/
 .pour {
   width: 100px;
   height: 50px;
@@ -254,7 +256,7 @@ body {
   width: 76px;
   height: 105px;
   top: 109px;
-  left: 429px; }
+  left: 440px; }
 
 #cola {
   background-image: url("../images/cola.png");
