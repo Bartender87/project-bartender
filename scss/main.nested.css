@@ -10,7 +10,7 @@ body {
   position: relative;
   z-index: 8; }
 
-/*.begin{
+.begin{
   background-image: url("../images/begin.jpg");
   margin-left: -8px;
   margin-top: -8px;
@@ -32,7 +32,7 @@ z-index: 9;
 top: 368px;
     left: 669px;
 
-  }*/
+  }
 .pour {
   width: 100px;
   height: 50px;
