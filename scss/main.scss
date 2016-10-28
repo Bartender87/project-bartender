@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bar.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 1115px;
+    height: 665px;
+    position: relative;
+    z-index: 8;
+}
+//START PAGE========================================================
+.begin{
+  background-image: url("../images/begin.jpg");
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 1200px;
+    height: 691px;
+  position: relative;
+  z-index: 6;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.beginBtn{
+background-image: url("../images/begin.png");
+width: 320px;
+height: 201px;
+background-size: contain;
+position: absolute;
+z-index: 9;
+top: 368px;
+    left: 669px;
+
+  }
+//BUTTONS==================================================================
+
+.pour {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: yellow;
+    font-size: 17px;
+    font-style: italic;
+    top: 220px;
+    left: 628px;
+    display: none;
+}
+
+.position {
+    background-size: contain;
+    position: absolute;
+}
+
+.choose {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    top: 504px;
+    left: 38px;}
+//ERRORS==============================================================
+.text{
+  text-align: center;
+  padding-top: 100px;
+}
+.forgetIce {
+  width: 400px;
+  height: 300px;
+    background-color: red;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    z-index: 10;
+    top: 152px;
+    left: 340px;
+     display: none;
+  }
+  .error {
+    width: 400px;
+    height: 300px;
+       top: 152px;
+       left: 340px;
+      background-color: red;
+      color: black;
+      font-size: 30px;
+      font-style: italic;
+      position: absolute;
+      z-index: 10;
+      display:none;
+
+
+    }
+//RECIPE==============================================================
+.recipe {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    top: 374px;
+    left: 371px;
+    position: absolute;
+    display: none;
+  }
+
+//SHAKER==================================================================
+
+.closedshaker {
+    background-image: url("../images/closedshaker.png");
+    width: 78px;
+    height: 127px;
+    top: 218px;
+    left: 560px;
+    visibility: hidden;
+}
+
+.openshaker {
+    background-image: url("../images/openshaker.png");
+    width: 77px;
+    height: 127px;
+    top: 231px;
+    left: 560px;
+    z-index: 4;
+}
+//ROTATES===========================================================
+@keyframes rote {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(90deg);
+    }
+
+    60% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes roteLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(-90deg);
+    }
+
+    60% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes shakeRote {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation-name: rote;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+.shakeRote {
+    animation-name: shakeRote;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.rotateLeft {
+    animation-name: roteLeft;
+    animation-delay: 5s;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+//ICE====================================================================
+
+.icebox {
+    background-image: url("../images/icebox.png");
+    width: 89px;
+    height: 92px;
+    top: 247px;
+    left: 240px;
+    z-index: 4;
+}
+
+.ice {
+    background-image: url("../images/ice.png");
+    width: 52px;
+    height: 49px;
+    top: 261px;
+    left: 255px;
+    z-index: 3;
+}
+//ALKOHOLS==============================================================
+
+#bacardi {
+    background-image: url("../images/bacardi.png");
+    width: 26px;
+    height: 103px;
+    top: 108px;
+    left: 283px;
+}
+
+#bombay {
+    background-image: url("../images/bombay.png");
+    width: 35px;
+    height: 97px;
+    top: 116px;
+    left: 329px;
+}
+
+#kahlua {
+    background-image: url("../images/kahlua.png");
+    width: 44px;
+    height: 100px;
+    top: 112px;
+    left: 212px;
+}
+
+#blue {
+    background-image: url("../images/blue.png");
+    width: 59px;
+    height: 103px;
+    top: 111px;
+    left: 152px;
+}
+
+#malibu {
+    background-image: url("../images/malibu.png");
+    width: 105px;
+    height: 104px;
+    top: 108px;
+    left: 83px;
+}
+
+#vodka {
+    background-image: url("../images/vodka.png");
+    width: 26px;
+    height: 106px;
+    top: 106px;
+    left: 414px;
+}
+
+#morgan {
+    background-image: url("../images/morgan.png");
+    width: 34px;
+    height: 105px;
+    top: 107px;
+    left: 371px;
+}
+
+#jim {
+    background-image: url("../images/jim.png");
+    width: 57px;
+    height: 99px;
+    top: 112px;
+    left: 777px;
+}
+
+#walker {
+    background-image: url("../images/walker.png");
+    width: 25px;
+    height: 98px;
+    top: 114px;
+    left: 747px;
+}
+
+#jameson {
+    background-image: url("../images/jameson.png");
+    width: 43px;
+    height: 103px;
+    top: 109px;
+    left: 700px;
+}
+
+#bison {
+    background-image: url("../images/bison.png");
+    width: 76px;
+    height: 105px;
+    top: 109px;
+    left: 429px;
+}
+
+#cola {
+    background-image: url("../images/cola.png");
+    width: 80px;
+    height: 80px;
+    top: 132px;
+    left: 56px;
+}
+
+#milk {
+    background-image: url("../images/milk.png");
+    width: 97px;
+    height: 92px;
+    top: 234px;
+    left: 1025px;
+}
+
+#grape {
+    background-image: url("../images/grape.png");
+    width: 63px;
+    height: 109px;
+    top: 109px;
+    left: 999px;
+}
+
+#apple {
+    background-image: url("../images/apple.png");
+    width: 61px;
+    height: 106px;
+    top: 110px;
+    left: 845px;
+}
+
+#orange {
+    background-image: url("../images/orange.png");
+    width: 63px;
+    height: 109px;
+    top: 109px;
+    left: 899px;
+}
+
+#pineapple {
+    background-image: url("../images/pineapple.png");
+    width: 63px;
+    height: 109px;
+    top: 109px;
+    left: 949px;
+}
+
+#sprite {
+    background-image: url("../images/sprite.png");
+    width: 24px;
+    height: 82px;
+    top: 130px;
+    left: 52px;
+}
+
+.girl {
+    background-image: url("../images/barwoman.png");
+    width: 249px;
+    height: 275px;
+    top: 76px;
+    left: 503px;
+    visibility: hidden;
+    z-index: 8;
+}
